@@ -8,7 +8,7 @@ export default function App() {
   const [logged, setLogged] = useState(false);
 
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/greendzine/"}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home logged={logged} />} />
         <Route path="/login" exact element={<Login setLogged={setLogged} />} />
